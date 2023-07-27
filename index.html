@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/4f85d972ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mx-auto my-3">
+        <div class="row">
+            <div class="col-10 m-auto border border-secondary-subtle rounded-top">
+                <h1>Payment form example</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 m-auto border border-secondary-subtle ">
+                <div class="row">
+                    <div class="col-12 my-2">
+                        <div class="alert alert-danger fw-bold" role="alert">
+                            Some fields are missing
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                   
+                        <div class="col-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Card #</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-3">
+
+                             <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword2" class="form-label">CVC #</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword2">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-4">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword3" class="form-label">Amount</label>
+                                    <i class="bi bi-currency-dollar"></i><input type="password" class="form-control" id="exampleInputPassword3">
+                                </div>
+                            </form>
+                        </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword4" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="exampleInputPassword4">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword5" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="exampleInputPassword5">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword6" class="form-label">City</label>
+                                <input type="text" class="form-control" id="exampleInputPassword6">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-3 ">
+                        <label for="state" class="form-label">State</label>
+                        <select class="form-select" aria-label="Default select example" id="state">
+                            <option value="1">One</option>
+                            <option selected>Pick a state</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                    <div class="col-3">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword8" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="exampleInputPassword8">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 flex-column">
+                        <p>We accept:</p>
+                        <div class="d-inline-flex bg-secondary rounded-1 p-1 gap-2 "id="tarjetas">
+                            <!--master card-->
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tarjeta" id="mastercard">
+                                <label class="form-check-label" for="mastercard">
+                                    <i class="fa-brands fa-cc-mastercard"></i>
+                                </label>
+                            </div>
+                              <!--visa-->
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tarjeta" id="visa">
+                                <label class="form-check-label" for="visa">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                </label>
+                            </div>
+                            <!--dinner club-->
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tarjeta" id="dinersclub">
+                                <label class="form-check-label" for="dinersclub">
+                                    <i class="fa-brands fa-cc-diners-club"></i>
+                                </label>
+                            </div>
+                            <!--American express-->
+                              <div class="form-check ">
+                                <input class="form-check-input" type="radio" name="tarjeta" id="americanexpress">
+                                <label class="form-check-label" for="americanexpress">
+                                    <i class="fa-brands fa-cc-amex"></i>
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="floatingTextarea2" class="form-label">Message</label>
+                        <div class="form-floating">
+                           <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                        <p>Add any notes here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 m-auto border border-secondary-subtle py-3 d-flex justify-content-end ">
+                <button type="button" class="btn btn-secondary p-1 mx-2">Cancel</button>
+                <button type="button" class="btn btn-primary p-1 ">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
