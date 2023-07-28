@@ -29,7 +29,7 @@
                         <div class="col-5">
                             <form>
                                 <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Card #</label>
+                                    <label for="exampleInputPassword1" class="form-label  text-black fw-bold">Card #</label>
                                     <input type="number" class="form-control text-light-emphasis text-uppercase" id="exampleInputPassword1" placeholder="xxxxxxxxxxxxxxxx">
                                 </div>
                             </form>
@@ -38,16 +38,18 @@
 
                              <form>
                                 <div class="mb-3">
-                                    <label for="exampleInputPassword2" class="form-label">CVC #</label>
+                                    <label for="exampleInputPassword2" class="form-label  text-black fw-bold">CVC #</label>
                                     <input type="number" class="form-control text-light-emphasis" id="exampleInputPassword2" placeholder="0000">
                                 </div>
                             </form>
                         </div>
                         <div class="col-4">
+                            
                             <form>
                                 <div class="mb-3">
-                                    <label for="exampleInputPassword3" class="form-label">Amount</label>
-                                    <i class="bi bi-currency-dollar"></i><input type="password" class="form-control text-light-emphasis" id="exampleInputPassword3" placeholder="Amount">
+                                    <label for="exampleInputPassword3" class="form-label  text-black fw-bold">Amount</label>
+                                    <i class="bi bi-currency-dollar" style="position:absolute; top:27%; right:37%; font-weight: bold;"></i>
+                                   <input type="password" class="form-control text-light-emphasis" id="exampleInputPassword3" placeholder="Amount">
                                 </div>
                             </form>
                         </div>
@@ -57,7 +59,7 @@
                     <div class="col-6">
                         <form>
                             <div class="mb-3">
-                                <label for="exampleInputPassword4" class="form-label">First name</label>
+                                <label for="exampleInputPassword4" class="form-label text-black fw-bold">First name</label>
                                 <input type="text" class="form-control" id="exampleInputPassword4">
                             </div>
                         </form>
@@ -65,7 +67,7 @@
                     <div class="col-6">
                         <form>
                             <div class="mb-3">
-                                <label for="exampleInputPassword5" class="form-label">Last name</label>
+                                <label for="exampleInputPassword5" class="form-label text-black fw-bold">Last name</label>
                                 <input type="text" class="form-control" id="exampleInputPassword5">
                             </div>
                         </form>
@@ -75,16 +77,17 @@
                     <div class="col-6">
                         <form>
                             <div class="mb-3">
-                                <label for="exampleInputPassword6" class="form-label">City</label>
+                                <label for="exampleInputPassword6" class="form-label text-black fw-bold">City</label>
                                 <input type="text" class="form-control" id="exampleInputPassword6">
                             </div>
                         </form>
                     </div>
                     <div class="col-3 ">
-                        <label for="state" class="form-label">State</label>
-                        <select class="form-select" aria-label="Default select example" id="state">
+                        <label for="state" class="form-label text-black fw-bold">State</label>
+                        <select class="form-select custom-select" aria-label="Default select example" id="state">
+                            <option selected>Pick a state</option> 
                             <option value="1">One</option>
-                            <option selected>Pick a state</option>
+                            
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                           </select>
@@ -92,7 +95,7 @@
                     <div class="col-3">
                         <form>
                             <div class="mb-3">
-                                <label for="exampleInputPassword8" class="form-label">Postal Code</label>
+                                <label for="exampleInputPassword8" class="form-label text-black fw-bold">Postal Code</label>
                                 <input type="text" class="form-control" id="exampleInputPassword8">
                             </div>
                         </form>
@@ -100,7 +103,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6 flex-column">
-                        <p>We accept:</p>
+                        <p class="text-black fw-bold">We accept:</p>
                         <div class="d-inline-flex bg-secondary rounded-1 p-1 gap-2 "id="tarjetas">
                             <!--master card-->
                             <div class="form-check">
@@ -133,7 +136,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <label for="floatingTextarea2" class="form-label">Message</label>
+                        <label for="floatingTextarea2" class="form-label text-black fw-bold">Message</label>
                         <div class="form-floating">
                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                         </div>
